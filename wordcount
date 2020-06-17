@@ -1,6 +1,7 @@
+#import pprint to make it prettier
 message = ('this','is','where','comma','separated','values','go')
 count = {} #dictionary containing key value pair
 for word in message:
   count.setdefault(word,0)
   count[word] = count[word]+2
- print(count)
+ pprint.pprint(count)
